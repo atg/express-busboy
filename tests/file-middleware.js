@@ -12,7 +12,7 @@ var assert = require('assert'),
 
 var port;
 var app = express();
-let mw = bb.middleware({ upload: true });
+let mw = bb({ upload: true });
 var base = 'http://127.0.0.1:';
 var setup = function(app) {
     app._server = app.listen(port);
